@@ -1,0 +1,24 @@
+@media screen and (max-width: 991px) {
+    
+}
+@media screen and (max-width: 768px) {
+    section,
+    footer{
+        padding: 50px 0;
+    }
+    header nav{
+        flex-direction: column;
+    }
+    header nav ul{
+        flex-direction: column;
+    }
+    footer .footerContent{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    footer .secondaryLinks{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media screen and (max-width: 560px) {
+    
+}
