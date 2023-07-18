@@ -69,6 +69,9 @@ button{
     flex-direction: column;
     gap: 40px;
 }
+.row{
+    width: 100%;
+}
 section,
 footer{
     padding: 70px 0;
@@ -148,6 +151,109 @@ header nav > ul > li:last-child a:last-child{
 }
 /* Header end ===================== */
 
+
+/* video section start  ====================== */
+#videoSection{
+    text-align: center;
+}
+#videoSection .row{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+#videoSection .row .card{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    cursor: pointer;
+}
+#videoSection .row .card .imgWrapper{
+    position: relative;
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 5px solid #fff;
+    transition: all 0.3s;
+}
+#videoSection .row .card .imgWrapper:hover{
+    border: 4px solid var(--primaryColor);
+}
+#videoSection .row .card .imgWrapper img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#videoSection .row .card .imgWrapper .overay{
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: grid;
+    place-items: center;
+    opacity: 0;
+    transition: all 0.3s;
+}
+#videoSection .row .card:hover .imgWrapper .overay{
+    opacity: 1;
+}
+#videoSection .row .card .imgWrapper .overay i{
+    font-size: 20px;
+    color: #000;
+    width: 50px;
+    aspect-ratio: 1;
+    background: var(--whiteColor);
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+}
+#videoSection .row .card p{
+    text-align: left;
+}
+/* video section end  ====================== */
+
+/* Games section start ============== */
+#games{
+    background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);     
+}
+#games .row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+}
+#games .row .card{
+    padding: 8px;
+    border-radius: 50px;
+    background: var(--whiteColor);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    border: 1px solid var(--whiteColor);
+    cursor: pointer;
+    transition: all 0.3s;
+}
+#games .row .card:hover{
+    border: 1px solid var(--primaryColor);
+}
+#games .row .card img{
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+#games .row .card p{
+    padding: 0;
+    color: var(--darkColor);
+    font-weight: 600;
+    transition: all 0.3s;
+}
+#games .row .card:hover p{
+    color: var(--primaryColor);
+}
+/* Games section end ============== */
+
+
 /* Footer start =================== */
 footer{
     background: var(--darkColor);
@@ -187,5 +293,6 @@ footer .secondaryLinks a,
 footer p{
     font-size: 14px;
     color: rgba(255, 255, 255, 0.60);
+    padding-bottom: 0;
 }
 /* Footer end =================== */

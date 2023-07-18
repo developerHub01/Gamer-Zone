@@ -1,7 +1,15 @@
 @media screen and (max-width: 991px) {
-    
+    #videoSection .row{
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 @media screen and (max-width: 768px) {
+    h2{
+        font-size: 35px;
+    }
+    p{
+        font-size: 15px;
+    }
     section,
     footer{
         padding: 50px 0;
@@ -11,6 +19,25 @@
     }
     header nav ul{
         flex-direction: column;
+    }
+
+    #videoSection .row{
+        grid-template-columns: 1fr;
+    }
+
+    #games .row .card{
+        padding: 5px;
+    }
+    #games .row .card img{
+        width: 30px;
+        height: 30px;
+    }
+    #games .row .card p{
+        font-size: 14px;
+    }
+
+    footer{
+        padding: 30px 0;
     }
     footer .footerContent{
         grid-template-columns: repeat(3, 1fr);
