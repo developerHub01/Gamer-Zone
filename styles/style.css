@@ -208,6 +208,9 @@ header nav > ul > li:last-child a:last-child{
 
 
 /* Gamer start ==================== */
+#gamer{
+    background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
+}
 #gamer .row{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -270,7 +273,7 @@ header nav > ul > li:last-child a:last-child{
 #videoSection .row .card .imgWrapper .overay{
     position: absolute;
     inset: 0;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.7);
     display: grid;
     place-items: center;
     opacity: 0;
@@ -299,18 +302,20 @@ header nav > ul > li:last-child a:last-child{
 .towCol .row{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 50px 75px;
+    gap: 30px 75px;
     place-items: center;
 }
 .towCol .row .content{
     width: 100%;
     max-width: 480px;
 }
+#PlayInstantly .content{
+    text-align: right;
+}
 .towCol .row .imgWrapper{
     position: relative;
     display: flex;
     justify-content: flex-end;
-    margin-left: 20px;
     margin-bottom: 50px;
 }
 .towCol .row .imgWrapper img{
@@ -328,14 +333,12 @@ header nav > ul > li:last-child a:last-child{
     left: 0;
     bottom: 0;
     transform: translate(-50%, 20%);
+    margin-left: 30px;
 }
-#PlayInstantly .content{
-    text-align: right;
-}
-
 #playGames .row .imgWrapper .miniImg{
     right: 0;
     bottom: 0;
+    margin-right: 30px;
     transform: translate(50%, 20%);
 }
 
