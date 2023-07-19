@@ -191,7 +191,8 @@ header nav > ul > li:last-child a:last-child{
 }
 #banner .row ul li{
     display: flex;
-    gap: 10px;
+    gap: 15px;
+    align-items: center;
     color: var(--pragraphColor);
 }
 #banner .row ul li i{
