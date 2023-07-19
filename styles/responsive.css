@@ -21,6 +21,23 @@
         flex-direction: column;
     }
 
+    #banner{
+        background: none;
+    }
+    #banner .row{
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+    #banner .row .content{
+        background: url('../images/bannerBg.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: left top;
+        padding: 20px;
+        order: 2;
+    }
+
+
     #videoSection .row{
         grid-template-columns: 1fr;
     }
