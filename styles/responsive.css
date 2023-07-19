@@ -2,8 +2,29 @@
     #videoSection .row{
         grid-template-columns: repeat(2, 1fr);
     }
+
+    .towCol .row{
+        grid-template-columns: 1fr;
+    }
+    .towCol .row .content{
+        text-align: center;
+    }
+    .towCol .row .imgWrapper{
+        width: 70%;
+    }
+    #PlayInstantly .content,
+    #playGames .content{
+        text-align: center;
+    }
+
+    #playGames .row .imgWrapper{
+        order: 2;
+    }
 }
 @media screen and (max-width: 768px) {
+    h1{
+        font-size: 50px;
+    }
     h2{
         font-size: 35px;
     }
@@ -64,6 +85,9 @@
     #games .row .card p{
         font-size: 14px;
     }
+
+    
+
 
     footer{
         padding: 30px 0;
