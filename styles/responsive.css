@@ -1,4 +1,8 @@
 @media screen and (max-width: 991px) {
+    #banner{
+        margin-bottom: 15px;
+    }
+
     #videoSection .row{
         grid-template-columns: repeat(2, 1fr);
     }

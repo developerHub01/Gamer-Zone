@@ -163,7 +163,6 @@ header nav > ul > li:last-child a:last-child{
     background-repeat: no-repeat;
     background-position: left top;
     background-size: 50% 100%;
-    margin-bottom: 15px;
 }
 #banner .row{
     display: grid;
