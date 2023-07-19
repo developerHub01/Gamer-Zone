@@ -27,6 +27,7 @@
     #banner .row{
         grid-template-columns: 1fr;
         justify-items: center;
+        align-items: center;
     }
     #banner .row .content{
         background: url('../images/bannerBg.png');
@@ -37,6 +38,16 @@
         order: 2;
     }
 
+    #gamer .row{
+        grid-template-columns: 1fr;
+        gap: 30px;
+        place-items: center;
+    }
+    #gamer .content{
+        text-align: center;
+        width: 100%;
+        max-width: 520px;
+    }
 
     #videoSection .row{
         grid-template-columns: 1fr;
