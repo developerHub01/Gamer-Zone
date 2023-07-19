@@ -299,12 +299,12 @@ header nav > ul > li:last-child a:last-child{
 .towCol .row{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 50px;
+    gap: 50px 75px;
     place-items: center;
 }
 .towCol .row .content{
     width: 100%;
-    max-width: 350px;
+    max-width: 480px;
 }
 .towCol .row .imgWrapper{
     position: relative;
@@ -384,6 +384,49 @@ header nav > ul > li:last-child a:last-child{
 }
 /* Games section end ============== */
 
+/* Careers section start =================== */
+#careers{
+    background: var(--primaryColor);
+}
+#careers .row{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    align-items: center;
+}
+#careers .row h2,
+#careers .row p,
+#careers .row ul{
+    color: var(--whiteColor);
+}
+#careers .row h2{
+    padding-bottom: 20px;
+}
+#careers .row ul{
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+#careers .row ul li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 600;
+}
+#careers .row ul li span:last-child{
+    text-align: right;
+}
+#careers .btnCareers{
+    background: var(--whiteColor);
+    color: var(--primaryColor);
+}
+#careers .row .imgWrapper,
+#careers .row .imgWrapper img{
+    width: 100%;
+}
+/* Careers section end =================== */
 
 /* Footer start =================== */
 footer{

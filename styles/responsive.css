@@ -16,9 +16,16 @@
     #playGames .content{
         text-align: center;
     }
-
     #playGames .row .imgWrapper{
         order: 2;
+    }
+
+
+    #careers .row{
+        grid-template-columns:1fr;
+    }
+    #careers .row ul li{
+        font-size: 16px;
     }
 }
 @media screen and (max-width: 768px) {
