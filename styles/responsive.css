@@ -61,7 +61,7 @@
     #banner .row .content{
         background: url('../images/bannerBg.png');
         background-repeat: no-repeat;
-        background-size: contain;
+        background-size: 100% 100%;
         background-position: left top;
         padding: 20px;
         order: 2;
