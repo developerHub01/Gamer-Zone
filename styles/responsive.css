@@ -23,6 +23,7 @@
 
     #banner{
         background: none;
+        padding-bottom: 0;
     }
     #banner .row{
         grid-template-columns: 1fr;

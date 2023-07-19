@@ -158,6 +158,7 @@ header nav > ul > li:last-child a:last-child{
 
 /* Banner start ======================= */
 #banner{
+    padding-bottom: 0;
     background: url('../images/bannerBg.png');
     background-repeat: no-repeat;
     background-position: left top;
@@ -195,6 +196,10 @@ header nav > ul > li:last-child a:last-child{
 }
 #banner .row ul li i{
     color: var(--primaryColor);
+}
+#banner .row .imgWrapper{
+    display: flex;
+    align-items: flex-end;
 }
 #banner .row img{
     width: 100%;
